@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Ponnkavi D | Graphic Designer</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+:root{
+    --bg:#0f0f0f;
+    --card:#181818;
+    --text:#e5e5e5;
+    --muted:#9ca3af;
+    --accent:#f43f5e;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Poppins', Arial, sans-serif;
+}
+
+body{
+    background:var(--bg);
+    color:var(--text);
+    scroll-behavior: smooth;
+}
+
+/* ---------- HERO ---------- */
+.hero{
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    padding:40px;
+}
+
+.hero h1{
+    font-size:60px;
+    font-weight:700;
+    letter-spacing:2px;
+}
+
+.hero span{
+    color:var(--accent);
+}
+
+.hero p{
+    margin-top:15px;
+    font-size:18px;
+    color:var(--muted);
+}
+
+/* ---------- SECTION ---------- */
+section{
+    padding:80px 8%;
+}
+
+.section-title{
+    font-size:32px;
+    font-weight:600;
+    margin-bottom:50px;
+    border-left:4px solid var(--accent);
+    padding-left:15px;
+}
+
+/* ---------- ABOUT ---------- */
+.about{
+    max-width:800px;
+    line-height:1.8;
+    color:var(--muted);
+    margin:auto;
+}
+
+/* ---------- SKILLS ---------- */
+.skills{
+    display:flex;
+    flex-wrap:wrap;
+    gap:15px;
+    justify-content:center;
+}
+
+.skill{
+    background:var(--card);
+    padding:12px 25px;
+    border-radius:30px;
+    font-size:14px;
+    transition: transform .3s;
+    cursor:default;
+}
+
+.skill:hover{
+    transform:scale(1.05);
+}
+
+/* ---------- EXPERIENCE ---------- */
+.experience{
+    display:flex;
+    flex-direction:column;
+    gap:25px;
+    max-width:900px;
+    margin:auto;
+}
+
+.exp-card{
+    background:var(--card);
+    padding:25px;
+    border-radius:16px;
+    transition: transform .3s;
+}
+
+.exp-card:hover{
+    transform:translateY(-5px);
+}
+
+.exp-card h3{
+    font-size:20px;
+    margin-bottom:5px;
+    color:var(--text);
+}
+
+.exp-card span{
+    font-size:14px;
+    color:var(--accent);
+}
+
+.exp-card p{
+    margin-top:10px;
+    line-height:1.6;
+    color:var(--muted);
+}
+
+/* ---------- PROJECTS ---------- */
+.projects{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:30px;
+}
+
+.project{
+    background:var(--card);
+    border-radius:16px;
+    overflow:hidden;
+    transition: transform .3s;
+}
+
+.project:hover{
+    transform:translateY(-6px);
+}
+
+.project img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.project-content{
+    padding:20px;
+}
+
+.project-content h3{
+    margin-bottom:10px;
+    color:var(--text);
+}
+
+.project-content p{
+    font-size:14px;
+    color:var(--muted);
+}
+
+/* ---------- VIDEO ---------- */
+.video-box{
+    max-width:900px;
+    margin:auto;
+    background:var(--card);
+    padding:20px;
+    border-radius:16px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.4);
+}
+
+video{
+    width:100%;
+    border-radius:12px;
+}
+
+/* ---------- CONTACT ---------- */
+.contact{
+    text-align:center;
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+}
+
+.contact p{
+    color:var(--muted);
+    font-size:16px;
+}
+
+.contact a{
+    color:var(--accent);
+    text-decoration:none;
+    transition: color .3s;
+}
+
+.contact a:hover{
+    color:#fff;
+}
+
+/* ---------- FOOTER ---------- */
+footer{
+    padding:20px;
+    text-align:center;
+    color:var(--muted);
+    border-top:1px solid #222;
+    font-size:14px;
+}
+</style>
+</head>
+
+<body>
+
+<!-- HERO -->
+<div class="hero">
+    <div>
+        <h1>PONNKAVI <span>D</span></h1>
+        <p>Graphic Designer • UI Designer </p>
+    </div>
+</div>
+
+<!-- ABOUT -->
+<section>
+    <h2 class="section-title">About Me</h2>
+    <div class="about">
+        <h3>Design with purpose. Creativity with passion.</h3>
+        <p>
+            I'm Ponnkavi, a graphic designer specializing in UI design, illustration, logo design, product design, and album design. I create designs that are visually appealing and communicate ideas clearly and effectively
+        </p>
+    </div>
+</section>
+
+<!-- SKILLS -->
+<section>
+    <h2 class="section-title">Skills</h2>
+    <div class="skills">
+        <div class="skill">Graphic Design</div>
+        <div class="skill">UI Design</div>
+        <div class="skill">Logo Design</div>
+        <div class="skill">Branding</div>
+        <div class="skill">Illustration</div>
+        <div class="skill">Typography</div>
+        <div class="skill">Poster Design</div>
+        <div class="skill">Social Media Creatives</div>
+        <div class="skill">Flyer design</div>
+        <div class="skill">Garment design</div>
+        <div class="skill">Album design</div>
+    </div>
+</section>
+
+<!-- TOOLS & SOFTWARE -->
+<section>
+    <h2 class="section-title">Tools & Software</h2>
+    <div class="skills">
+        <div class="skill">Adobe Illustater</div>
+        <div class="skill">Adobe Photoshop</div>
+        <div class="skill">Adobe XD</div>
+        <div class="skill">Figma</div>
+        <div class="skill">Adobe InDesign</div>
+        <div class="skill">CorelDRAW</div>
+        <div class="skill">Blender(basics)</div>
+        <div class="skill">Davinci resolve(basics)</div>
+
+    </div>
+</section>
+<!-- EXPERIENCE -->
+<section>
+    <h2 class="section-title">Work Experience</h2>
+    <div class="experience">
+
+        <div class="exp-card">
+            <h3>Fashion Graphic Designer</h3>
+            <span>SCM Garment · 2025 · 5 Months</span>
+            <p>
+                • Designed graphics, prints, and patterns for fashion products<br>
+                • Created visuals for clothing, packaging, and promotions<br>
+                • Collaborated with designers and followed current fashion trends
+            </p>
+        </div>
+
+        <div class="exp-card">
+            <h3>Heat Treatment Engineer</h3>
+            <span>Timken · 2024 – 2025 · 4 Months</span>
+            <p>
+                • Controlled heat treatment processes to improve metal strength<br>
+                • Selected proper temperatures, timing, and cooling methods<br>
+                • Inspected and tested treated materials for quality standards
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<!-- PROJECTS -->
+<section>
+    <h2 class="section-title">Works Model</h2>
+    <div class="projects">
+        <div class="project">
+            <img src="Untitled-4.png" alt="Z Zone Studio Logo">
+            <div class="project-content">
+                <h3>Z Zone Studio</h3>
+                <p>Bold logo design with strong brand identity.</p>
+            </div>
+        </div>
+
+        <div class="project">
+            <img src="WhatsApp Image 2025-12-24 at 12.06.06.jpeg" alt="Green Hydrogen Mission">
+            <div class="project-content">
+                <h3>Green Hydrogen Mission</h3>
+                <p>Illustration & branding for national mission.</p>
+            </div>
+        </div>
+
+        <div class="project">
+            <img src="WhatsApp Image 2025-12-24 at 12.10.46.jpeg" alt="Cinestrix Studios Logo">
+            <div class="project-content">
+                <h3>Cinestrix Studios</h3>
+                <p>Cinematic logo with dramatic lighting concept.</p>
+            </div>
+        </div>
+        <div class="project">
+            <img src="Untitled (2).jpg" alt="mouse paking model">
+            <div class="project-content">
+                <h3>Mouse box</h3>
+                <p>Product packing designs.</p>
+            </div>
+        </div>
+        <div class="project">
+            <img src="robot.jpg" alt="Illustration">
+            <div class="project-content">
+                <h3>Illustration</h3>
+                <p>Illustration design.</p>
+            </div>
+        </div>
+         <div class="project">
+            <img src="Screenshot 2025-12-12 at 21.56.02.png" alt="UI Drsign">
+            <div class="project-content">
+                <h3>Milky Mist</h3>
+                <p>UI design .</p>
+            </div>
+        </div>
+        <div class="project">
+            <img src="Untitled (6).jpg" alt="packing">
+            <div class="project-content">
+                <h3>coco cart</h3>
+                <p> paking design.</p>
+            </div>
+        </div>
+        <div class="project">
+            <img src="Untitled-dino.jpg" alt="Garment">
+            <div class="project-content">
+                <h3>Tshirt design</h3>
+                <p> Garment design.</p>
+            </div>
+        </div>
+         <div class="project">
+            <img src="Untitled-angal.jpg" alt="Garment">
+            <div class="project-content">
+                <h3>wire design </h3>
+                <p> for Garment design.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<!-- CONTACT -->
+<section>
+    <h2 class="section-title">Contact</h2>
+    <div class="contact">
+        <p>📞 <a href="tel:+919384793434">+91 93847 93434</a></p>
+        <p>📧 <a href="mailto:ponnkavi3434@gmail.com">ponnkavi3434@gmail.com</a></p>
+        <p>📍 Erode, Tamil Nadu</p>
+        <p>🔗 <a href="https://www.linkedin.com/in/ponnkavi-d-10b98638a">linkedin.com/in/ponnkavi-d-10b98638a</a></p>
+    </div>
+</section>
+
+<footer>
+    © 2025 Ponnkavi D — Graphic Designer
+</footer>
+
+</body>
+</html>
